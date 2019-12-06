@@ -11,3 +11,5 @@ print ("change from new folder 2")
 
 print ("from issue#1")
 print ("after merge")
+
+print("update from master")
