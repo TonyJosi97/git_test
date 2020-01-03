@@ -14,4 +14,4 @@ print ("after merge")
 
 print ("Update from issue2")
  
-update from test1 || sfsd ||sdfd |sfsdfds||sdfsdfsd
+update from test1 || sfsd ||sdfd |sfsdfds||sdfsdfsd || sfsd ||sdfsd 
