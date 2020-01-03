@@ -15,3 +15,5 @@ print ("after merge")
 print ("Update from issue2")
 #hello
 new form master
+ 
+update from test1 || sfsd ||sdfd |sfsdfds||sdfsdfsd || sfsd ||sdfsd 
