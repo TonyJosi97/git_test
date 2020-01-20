@@ -32,9 +32,9 @@ To make the latest checkout the default version for the parent repo, commit the 
 
 ### Make changes in a git submodule
 
-#### A submodule is its own repo/work-area, with its own .git directory. 
-
 #### NOTE: Before doing any work in the submodule checkout to a branch inside the submodule, because by default there wont be any branch to keep track the submodule
+
+#### A submodule is its own repo/work-area, with its own .git directory. 
 
 So, first commit/push your submodule's changes:
 ```
