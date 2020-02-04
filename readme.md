@@ -50,3 +50,24 @@ $ git add path/to/submodule
 $ git commit -m "updated my submodule"
 $ git push
 ```
+
+## Removing a file from all previous commits and making it reflect in the remote
+
+syntax is `git filter-branch --tree-filter <command> ...`
+
+`git filter-branch --tree-filter 'rm -f Resources\Video\%font%.ttf' -- --all`
+Explanation about the command:
+
+`< command >`: Specify any shell command.
+
+`--tree-filter`: Git will check each commit out into working directory, run your command, and re-commit.
+
+`--all`: Filter all commits in all branches.
+
+
+**Example:**
+''' sh
+git filter-branch --tree-filter 'rm -f <file-name>' -- --all
+git push --force origin <branch-name>
+'''
+
