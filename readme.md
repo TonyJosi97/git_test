@@ -56,6 +56,7 @@ $ git push
 syntax is `git filter-branch --tree-filter <command> ...`
 
 `git filter-branch --tree-filter 'rm -f Resources\Video\%font%.ttf' -- --all`
+
 Explanation about the command:
 
 `< command >`: Specify any shell command.
