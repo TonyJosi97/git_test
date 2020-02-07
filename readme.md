@@ -73,3 +73,8 @@ git filter-branch --tree-filter 'rm -f <file-name>' -- --all
 git push --force origin <branch-name>
 '''
 
+## Stop git from tracking a previously tracked file
+
+Your .gitignore is working, but it **still tracks the files because they were already in the index.**
+
+To stop this you have to do : `git rm -r --cached <location>`
