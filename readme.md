@@ -78,3 +78,24 @@ git push --force origin <branch-name>
 Your .gitignore is working, but it **still tracks the files because they were already in the index.**
 
 To stop this you have to do : `git rm -r --cached <location>`
+
+
+## Git Cherry Pick
+
+`git cherry-pick` is a powerful command that enables arbitrary Git commits to be picked by reference and appended to the current working HEAD. 
+
+`git cherry-pick` can be useful for undoing changes. For example, say a commit is accidently made to the wrong branch. You can switch to the correct branch and cherry-pick the commit to where it should belong.
+
+git cherry pick can also be passed some execution options.
+
+`-edit`
+Passing the `-edit` option will cause git to prompt for a commit message before applying the cherry-pick operation
+
+`--no-commit`
+The `--no-commit` option will execute the cherry pick but instead of making a new commit it will move the contents of the target commit into the working directory of the current branch.
+
+**Example:**
+``` sh
+git checkout branch-that-needs-commit
+git cherry-pick sha-id-of-commit-from-other-branch
+```
